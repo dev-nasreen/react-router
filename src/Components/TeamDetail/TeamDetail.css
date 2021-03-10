@@ -1,0 +1,39 @@
+.team-detail-banner{
+    width:1440px;
+    height: 350px;
+    position: relative;
+}
+.team-detail-banner .banner-img{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.left img{
+    height: 50px;
+    margin-left: 35px;
+}
+.cart-banner{
+    height:auto;
+    padding: 10px;
+    background-color: darkcyan;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.left{
+    color:#fff;
+}
+.right img{
+    height: 200px;
+    width: 100%;
+    border-radius:15px ;
+}
+.left p{
+    font-size: 20px;
+}
+.cart-body{
+    color: #fff;
+    margin: 20px 0;
+}

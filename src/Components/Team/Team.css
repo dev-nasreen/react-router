@@ -1,0 +1,15 @@
+.single-cart{
+    width:350px;
+    height: 250px;
+    border:1px solid #000;
+    margin: 20px;
+}
+
+.single-cart img{
+    height: 70px;
+}
+.card .card-img{
+    height: 70px;
+    width:70px;
+    margin: 10px auto;
+}
