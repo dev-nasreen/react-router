@@ -8,7 +8,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './Components/Home/Home';
-import TeamDetail from './Components/TeamDetail/TeamDetail';
+import LeagueDetail from './Components/LeagueDetail/LeagueDetail';
 import Contact from './Components/Contact/Contact';
 import { Navbar } from './Components/Navbar/Navbar';
 
@@ -19,11 +19,14 @@ function App() {
     <Router>
       <Navbar></Navbar>
         <Switch>
+          <Route exact path="/home">
+          <Home></Home>
+          </Route>
           <Route exact path="/contact">
             <Contact></Contact>
           </Route>
-          <Route  path="/home/:idTeam">
-           <TeamDetail></TeamDetail>
+          <Route  path="/home/:idLeague">
+           <LeagueDetail></LeagueDetail>
           </Route>
           <Route exact path="/">
             <Home></Home>

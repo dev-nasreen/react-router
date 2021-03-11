@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
-import Team from '../Team/Team';
+import League from '../League/League';
 
 
 const Home = () => {
-    const [teams, setTeams] = useState([]);
+    const [leagues, setLeagues] = useState([]);
     useEffect(() => {
-        const url = `https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League`;
+        const url = `https://www.thesportsdb.com/api/v1/json/1/search_all_leagues.php?c=England`;
         fetch(url)
             .then(res => res.json())
             // .then(data => console.log (data.leagues))
             .then(data => {
-                const Leagues = (data.teams);
-                const first15 = Leagues.slice(0, 100);
-                setTeams(first15);
-                console.log(first15);
+                const Leagues = (data.countrys);
+               // const first21 = Leagues.slice(0, 51);
+                setLeagues(Leagues);
             })
 
     }, [])
@@ -31,7 +30,7 @@ const Home = () => {
                             <div className="row gy-4 gx-4 ">
 
                                 {
-                                    teams.map(team => <Team team={team}></Team>)
+                                    leagues.map(league => <League league={league}></League>)
                                 }
 
                             </div>

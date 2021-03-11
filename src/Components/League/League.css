@@ -8,6 +8,9 @@
 .single-cart img{
     height: 70px;
 }
+.card{
+    height: 350px;
+}
 .card .card-img{
     height: 70px;
     width:70px;

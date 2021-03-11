@@ -6,8 +6,8 @@ export const Navbar = () => {
   return (
     <>
         <div className="row">
-          <div className="col-12 ">
-              <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div className="col-12 mx-auto ">
+              <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
                 <div className="container">
                   <Link className="navbar-brand logo" to="/home">League Mania</Link>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
